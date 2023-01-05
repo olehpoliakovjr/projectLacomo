@@ -1,22 +1,28 @@
 .wrapper{
-  width: 80%;
-  margin: 0 auto;
+
+
   .header{
 
-
     .container{
-
+      width: 80vw;
+      margin: 0 auto;
       .header-line-position{
-
+        display: block;
+        box-sizing: border-box;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        z-index: 505;
       }
 
       .header-line{
+        position: relative;
         width: 100%;
-        height: 100px;
+        height: 60px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        //margin: 0 auto;
+        margin-top: 20px;
 
 
 
@@ -28,7 +34,7 @@
           .logo{
 
             .logo-link{
-              font-size: 26px;
+              font-size: 30px;
               color: #01996D;
               font-weight: 600;
             }
@@ -44,7 +50,7 @@
             margin: 0 30px;
 
             .header-nav-item-link{
-              font-size: 18px;
+              font-size: 16px;
               color: black;
 
             } &:hover{
@@ -58,23 +64,21 @@
 
 
           .header-log{
-            margin-right:10px;
             width: 165px;
             height: 42px;
 
             .log-btn{
               background-color: black;
-              width: 160px;
-              height: 40px;
-              border-radius: 10px;
+              width: 150px;
+              height: 35px;
               &:hover {
-                width: 165px;
-                height: 42px;
+                width: 155px;
+                height: 38px;
               }
 
 
               .log-btn-link{
-                font-size: 18px;
+                font-size: 16px;
                 color: white;
 
               }
@@ -87,16 +91,15 @@
 
             .reg-btn{
               background-color: #01996D;
-              width: 160px;
-              height: 40px;
-              border-radius: 10px;
+              width: 150px;
+              height: 35px;
               &:hover {
-                width: 165px;
-                height: 42px;
+                width: 155px;
+                height: 38px;
               }
 
               .reg-btn-link{
-                font-size: 18px;
+                font-size: 16px;
                 color: black;
               }
             }
