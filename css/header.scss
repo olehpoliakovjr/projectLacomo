@@ -1,111 +1,81 @@
-.wrapper{
+.header{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+
+  .header_container{
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 85px;
+    align-items: center;
+
+    .logo-link{
+      font-size: 32px;
+      color: #01996D;
+      font-weight: 600;
+      margin: 0 30px 0 0;
+    }
+    .menu{
+      padding: 5px 0;
+    }
+    .header-menu{
 
 
-  .header{
 
-    .container{
-      width: 80vw;
-      margin: 0 auto;
-      .header-line-position{
-        display: block;
-        box-sizing: border-box;
-        left: 0;
-        width: 100%;
-        height: 100px;
-        z-index: 505;
-      }
-
-      .header-line{
-        position: relative;
-        width: 100%;
-        height: 60px;
+      .menu-list{
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 20px;
+        flex-wrap: wrap;
 
+        .menu-item{
+          margin: 0 60px 0 0;
+          font-size: 16px;
 
+          .menu-link{
+            color: #292929;
+            line-height: calc(24 / 14 * 100%);
 
-        .header-logo{
-
-
-
-
-          .logo{
-
-            .logo-link{
-              font-size: 30px;
-              color: #01996D;
-              font-weight: 600;
-            }
-          }
-
-        }
-
-        .header-nav{
-          display: flex;
-
-
-          .header-nav-item{
-            margin: 0 30px;
-
-            .header-nav-item-link{
-              font-size: 16px;
-              color: black;
-
-            } &:hover{
-                text-decoration: underline;
-                          }
-          }
-        }
-
-        .header-log-reg{
-          display: flex;
-
-
-          .header-log{
-            width: 165px;
-            height: 42px;
-
-            .log-btn{
-              background-color: black;
-              width: 150px;
-              height: 35px;
-              &:hover {
-                width: 155px;
-                height: 38px;
-              }
-
-
-              .log-btn-link{
-                font-size: 16px;
-                color: white;
-
-              }
-            }
-          }
-          .header-reg{
-            width: 165px;
-            height: 42px;
-
-
-            .reg-btn{
-              background-color: #01996D;
-              width: 150px;
-              height: 35px;
-              &:hover {
-                width: 155px;
-                height: 38px;
-              }
-
-              .reg-btn-link{
-                font-size: 16px;
-                color: black;
-              }
-            }
           }
         }
       }
     }
+    .header-logForm{
+
+
+      .logForm-btn{
+        width: 130px;
+        height: 40px;
+        background-color: #01996D;
+
+        .logForm-btn-link{
+          color: white;
+          font-size: 16px;
+
+        }
+      }
+      .regForm-btn{
+        width: 130px;
+        height: 40px;
+        background-color: inherit;
+        border: 1px solid black;
+
+        .regForm-btn-link{
+          color: #292929;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 587px) {
+  .menu-link{
+    font-size: 18px;
+    padding: 0 0 5px 0;
+  }
+}
+@media (max-width: 587px) {
+  .header_container{
+    min-height: 70px;
   }
 }
