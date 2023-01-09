@@ -8,7 +8,7 @@
 }
 .header .header_container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   min-height: 85px;
   align-items: center;
 }
@@ -71,7 +71,7 @@
   position: relative;
 }
 .page .main-block .main-block-container .main-block-tdb {
-  padding: 202px 0 300px 0;
+  padding: 400px 0 200px 0;
   position: relative;
   z-index: 2;
   max-width: 400px;
@@ -105,7 +105,62 @@
   top: 0;
   left: 0;
 }
-
+.page .info-block .info-block-container {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page .info-block .info-block-container .info-block-title .info-block-title_question {
+  font-size: 16px;
+  color: #292929;
+  line-height: 125%;
+}
+.page .info-block .info-block-container .info-block-title .info-block-title_title {
+  font-size: 36px;
+  line-height: 100%;
+  color: #01996D;
+  font-weight: 600;
+  font-family: Georgia, sans-serif;
+}
+.page .info-block .info-block-container .info-block-description {
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  margin: 15px 0 0 0;
+  line-height: 125%;
+}
+.page .article-block-page {
+  position: relative;
+}
+.page .article-block-page .article-block-container .article-block-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  flex-wrap: wrap;
+}
+.page .article-block-page .article-block-container .article-block-wrapper .article-block {
+  flex-wrap: wrap;
+}
+.page .article-block-page .article-block-container .article-block-wrapper .article-block .article-number-wrapper .article-number {
+  font-size: 130px;
+  color: #01996D;
+  font-family: Georgia, sans-serif;
+  opacity: 0.5;
+}
+.page .article-block-page .article-block-container .article-block-wrapper .article-block .article-name {
+  font-size: 40px;
+  font-weight: 500;
+  padding: 0 0 20px 0;
+}
+.page .article-block-page .article-block-container .article-block-wrapper .article-block .article-text {
+  font-size: 16px;
+  line-height: 125%;
+}
+.page .article-block-page .article-block-container .article-block-wrapper .article-block .article-image img {
+  max-width: 390px;
+  max-height: 485px;
+}
 * {
   padding: 0;
   margin: 0;
@@ -210,6 +265,33 @@ body {
   top: 0;
   left: 0;
   object-fit: cover;
+}
+
+@media (max-width: 565px) {
+  .main-background-image {
+    opacity: 0.9;
+    color: black;
+  }
+  .menu-list {
+    margin-top: 20px;
+  }
+  .info-block-title {
+    max-height: 400px;
+    padding: 0 10px 0 0;
+  }
+  .info-block-description {
+    max-height: 400px;
+    font-size: 22px;
+  }
+}
+._img img {
+  border-radius: 10px;
+}
+
+@media (max-width: 1150px) {
+  .info-block-title {
+    padding: 0 15px 0 0;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

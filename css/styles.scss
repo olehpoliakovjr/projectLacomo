@@ -47,5 +47,29 @@ body{
   left: 0;
   object-fit: cover;
 }
-
+@media (max-width: 565px) {
+  .main-background-image{
+    opacity: 0.9;
+    color: black;
+  }
+  .menu-list{
+    margin-top: 20px;
+  }
+  .info-block-title{
+    max-height: 400px;
+    padding: 0 10px 0 0;
+  }
+  .info-block-description{
+    max-height: 400px;
+    font-size: 22px;
+  }
+}
+._img img{
+  border-radius: 10px;
+}
+@media (max-width: 1150px){
+  .info-block-title{
+    padding: 0 15px 0 0;
+  }
+}
 
