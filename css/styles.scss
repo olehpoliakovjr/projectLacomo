@@ -72,4 +72,56 @@ body{
     padding: 0 15px 0 0;
   }
 }
+.article-first-number{
+  position: absolute;
+}
+@media (max-width: 1085px) {
+  .article-block-three {
+    margin: 0 auto;
+    padding: 50px 0 0 0;
+  }
+}
+
+@media (max-width: 735px) {
+  .article-block-wrapper{
+    margin: 0 auto;
+
+
+  }
+  .article-block-one{
+    padding:10px 0 0 0;
+  }
+
+  .article-block-two {
+    margin: -140px 0 0 0;
+  }
+  .article-block-three {
+    margin: 0;
+  }
+}
+
+@media (max-width: 476px) {
+  .logForm-btn{
+    width: 80px;
+    height: 25px;
+    background-color: #01996D;
+
+    .logForm-btn-link{
+      color: white;
+      font-size: 16px;
+
+    }
+  }
+  .regForm-btn{
+    width: 80px;
+    height: 25px;
+    background-color: inherit;
+    border: 1px solid black;
+
+    .regForm-btn-link{
+      color: #292929;
+      font-size: 16px;
+    }
+  }
+}
 

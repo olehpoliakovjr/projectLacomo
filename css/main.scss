@@ -59,10 +59,10 @@
   }
 
   .info-block {
-
+    padding: 0 0 20px 0;
 
     .info-block-container {
-      min-height: 300px;
+      min-height: 250px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -100,34 +100,47 @@
 
   .article-block-page {
     position: relative;
-
+    min-height: 600px;
     .article-block-container {
 
 
       .article-block-wrapper {
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 100%;
         flex-wrap: wrap;
 
         .article-block {
-          flex-wrap: wrap;
+
 
           .article-number-wrapper {
+            position: relative;
 
 
             .article-number {
-
-              font-size: 130px;
+              position: absolute;
+              bottom: -40px;
+              left: 50px;
+              font-size: 110px;
               color: #01996D;
               font-family: Georgia, sans-serif;
               opacity: 0.5;
             }
+            .article-first-number{
+              position: absolute;
+              bottom: -40px;
+              left: 100px;
+            }
+            .article-second-number{
+              position: absolute;
+              bottom: -30px;
+              left: 60px;
+            }
           }
 
           .article-name {
-            font-size: 40px;
+            font-size: 30px;
             font-weight: 500;
             padding: 0 0 20px 0;
           }
@@ -142,21 +155,24 @@
           }
 
           .article-image img {
-            max-width: 390px;
-            max-height: 485px;
+            max-width: 350px;
+            max-height: 450px;
           }
 
         }
-
-
-        .article-block_second {
+        .article-block-one{
 
         }
 
-        .article-block_third {
+        .article-block-two {
+          padding-top: 200px;
+        }
+
+        .article-block-three {
 
         }
       }
     }
   }
 }
+//сделать бургер меню

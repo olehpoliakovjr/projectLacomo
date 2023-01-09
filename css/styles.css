@@ -34,8 +34,8 @@
   line-height: 171.4285714286%;
 }
 .header .header_container .header-logForm .logForm-btn {
-  width: 130px;
-  height: 40px;
+  width: 120px;
+  height: 35px;
   background-color: #01996D;
 }
 .header .header_container .header-logForm .logForm-btn .logForm-btn-link {
@@ -43,8 +43,8 @@
   font-size: 16px;
 }
 .header .header_container .header-logForm .regForm-btn {
-  width: 130px;
-  height: 40px;
+  width: 120px;
+  height: 35px;
   background-color: inherit;
   border: 1px solid black;
 }
@@ -105,8 +105,11 @@
   top: 0;
   left: 0;
 }
+.page .info-block {
+  padding: 0 0 20px 0;
+}
 .page .info-block .info-block-container {
-  min-height: 300px;
+  min-height: 250px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -131,25 +134,39 @@
 }
 .page .article-block-page {
   position: relative;
+  min-height: 600px;
 }
 .page .article-block-page .article-block-container .article-block-wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
   flex-wrap: wrap;
 }
-.page .article-block-page .article-block-container .article-block-wrapper .article-block {
-  flex-wrap: wrap;
+.page .article-block-page .article-block-container .article-block-wrapper .article-block .article-number-wrapper {
+  position: relative;
 }
 .page .article-block-page .article-block-container .article-block-wrapper .article-block .article-number-wrapper .article-number {
-  font-size: 130px;
+  position: absolute;
+  bottom: -40px;
+  left: 50px;
+  font-size: 110px;
   color: #01996D;
   font-family: Georgia, sans-serif;
   opacity: 0.5;
 }
+.page .article-block-page .article-block-container .article-block-wrapper .article-block .article-number-wrapper .article-first-number {
+  position: absolute;
+  bottom: -40px;
+  left: 100px;
+}
+.page .article-block-page .article-block-container .article-block-wrapper .article-block .article-number-wrapper .article-second-number {
+  position: absolute;
+  bottom: -30px;
+  left: 60px;
+}
 .page .article-block-page .article-block-container .article-block-wrapper .article-block .article-name {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 500;
   padding: 0 0 20px 0;
 }
@@ -158,8 +175,11 @@
   line-height: 125%;
 }
 .page .article-block-page .article-block-container .article-block-wrapper .article-block .article-image img {
-  max-width: 390px;
-  max-height: 485px;
+  max-width: 350px;
+  max-height: 450px;
+}
+.page .article-block-page .article-block-container .article-block-wrapper .article-block-two {
+  padding-top: 200px;
 }
 * {
   padding: 0;
@@ -291,6 +311,51 @@ body {
 @media (max-width: 1150px) {
   .info-block-title {
     padding: 0 15px 0 0;
+  }
+}
+.article-first-number {
+  position: absolute;
+}
+
+@media (max-width: 1085px) {
+  .article-block-three {
+    margin: 0 auto;
+    padding: 50px 0 0 0;
+  }
+}
+@media (max-width: 735px) {
+  .article-block-wrapper {
+    margin: 0 auto;
+  }
+  .article-block-one {
+    padding: 10px 0 0 0;
+  }
+  .article-block-two {
+    margin: -140px 0 0 0;
+  }
+  .article-block-three {
+    margin: 0;
+  }
+}
+@media (max-width: 476px) {
+  .logForm-btn {
+    width: 80px;
+    height: 25px;
+    background-color: #01996D;
+  }
+  .logForm-btn .logForm-btn-link {
+    color: white;
+    font-size: 16px;
+  }
+  .regForm-btn {
+    width: 80px;
+    height: 25px;
+    background-color: inherit;
+    border: 1px solid black;
+  }
+  .regForm-btn .regForm-btn-link {
+    color: #292929;
+    font-size: 16px;
   }
 }
 
