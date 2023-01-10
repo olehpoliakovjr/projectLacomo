@@ -176,6 +176,7 @@
   font-size: 30px;
   font-weight: 500;
   padding: 0 0 20px 0;
+  text-align: center;
 }
 .page .article-block-page .article-block-container .article-block-wrapper .article-block .article-text {
   font-size: 16px;
@@ -301,6 +302,9 @@
 .page .product-info .product-block-container .product-info-imageBlock .product-info-imageGirl .product-info-card .info-card-services .info-card-services_item {
   font-weight: 400;
   margin: 30px 0;
+}
+.page .product-info .product-block-container .product-info-descriptionBlock > *:not(:last-child) {
+  padding: 0 0 30px 0;
 }
 .page .product-info .product-block-container .product-info-descriptionBlock .descriptionBlock-about {
   font-size: 16px;

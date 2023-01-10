@@ -146,6 +146,7 @@ $title-fz: 36px;
             font-size: 30px;
             font-weight: 500;
             padding: 0 0 20px 0;
+            text-align: center;
           }
 
           .article-text {
@@ -305,6 +306,9 @@ $title-fz: 36px;
       }
       .product-info-descriptionBlock{
 
+        & > *:not(:last-child) {
+          padding: 0 0 30px 0;
+        }
 
         .descriptionBlock-about{
           font-size: $base-fz;
