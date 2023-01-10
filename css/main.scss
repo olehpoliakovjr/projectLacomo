@@ -1,3 +1,6 @@
+$base-fz: 16px;
+$title-fz: 36px;
+
 .page {
   flex: 1 1 auto;
 
@@ -21,7 +24,7 @@
 
 
         .block-tdb-title {
-          font-size: 40px;
+          font-size: $title-fz;
           line-height: calc(36 / 40 * 100%);
           color: #01996D;
           font-weight: 600;
@@ -31,8 +34,8 @@
         }
 
         .block-tdb-description {
-          font-size: 16px;
-          line-height: calc(20 / 16 * 100%);
+          font-size: $base-fz;
+          line-height: calc(30 / 16 * 100%);
 
         }
 
@@ -43,7 +46,7 @@
 
           .block-tdb-button-link {
             color: white;
-
+            font-size: 14px;
           }
         }
       }
@@ -59,7 +62,7 @@
   }
 
   .info-block {
-    padding: 0 0 20px 0;
+    padding: 100px 0 20px 0;
 
     .info-block-container {
       min-height: 250px;
@@ -71,7 +74,7 @@
 
 
         .info-block-title_question {
-          font-size: 16px;
+          font-size: $base-fz;
           color: #292929;
           line-height: calc(20 / 16 * 100%);
 
@@ -79,8 +82,8 @@
         }
 
         .info-block-title_title {
-          font-size: 36px;
-          line-height: calc(36 / 36 * 100%);
+          font-size: $title-fz;
+          line-height: calc(40 / 36 * 100%);
           color: #01996D;
           font-weight: 600;
           font-family: Georgia, sans-serif;
@@ -89,11 +92,11 @@
       }
 
       .info-block-description {
-        font-size: 16px;
-        letter-spacing: 0.2px;
+        font-size: $base-fz;
+        letter-spacing: 0.5px;
         margin: 15px 0 0 0;
-        line-height: calc(20 / 16 * 100%);
-
+        line-height: calc(30 / 16 * 100%);
+        font-style: italic;
       }
     }
   }
@@ -146,8 +149,10 @@
           }
 
           .article-text {
-            font-size: 16px;
-            line-height: calc(20 / 16 * 100%);
+            font-size: $base-fz;
+            line-height: calc(30 / 16 * 100%);
+            padding: 0 0 25px 0;
+            letter-spacing: 0.5px;
           }
 
           .article-image {
@@ -174,5 +179,169 @@
       }
     }
   }
+  .introduction-block{
+    background-color: #245852;
+    margin: 100px 0 0 0;
+    padding: 50px 0;
+
+    .introduction-block-container{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-wrap: wrap-reverse;
+      .introduction-block-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        & > *:not(:last-child) {
+          padding: 0 0 30px 0;
+        }
+
+        .introduction-info_title{
+          font-family: Georgia,sans-serif;
+          font-size: $title-fz;
+          color: white;
+          line-height: calc(40 / 36 * 100%);
+          font-weight: 600;
+        }
+
+        .introduction-info_description{
+          font-size: $base-fz;
+          color: white;
+          letter-spacing: 0.5px;
+        }
+        .introduction-info_button{
+          background-color: #01996D;
+          width: 130px;
+          height: 40px;
+          text-align: center;
+
+
+          .introduction-info_link{
+            color: white;
+            margin: 0 auto;
+            font-size: 14px;
+          }
+        }
+      }
+      .introduction-block-video{
+        position: relative;
+
+        .video{
+          height: 400px;
+          max-width: 700px;
+        }
+      }
+    }
+  }
+  .product-info{
+    padding: 70px 0;
+    .product-block-container{
+      padding: 100px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+
+      .product-info-imageBlock{
+        position: relative;
+        max-width: 500px;
+        max-height: 700px;
+       .product-info-imageGirl{
+         background-color: rgba(4, 91, 46, 0.4);
+         position: relative;
+         min-width: 500px;
+         height: 500px;
+
+         .girl{
+           position: absolute;
+           bottom: 0px;
+
+         }
+
+         .product-info-card{
+           box-shadow: 1px 1px 50px 5px;
+           padding: 20px;
+           top: 320px;
+           right: 290px;
+           position: absolute;
+           //border: 1px solid red;
+           z-index: 5;
+           min-height: 250px;
+           max-height: 280px;
+           background-color: white;
+           min-width: 270px;
+           max-width: 500px;
+           text-align: center;
+           & > *:not(:last-child) {
+             padding: 0 0 20px 0;
+           }
+
+           .info-card-title{
+             font-size: 14px;
+             text-transform: uppercase;
+           }
+           .info-card-logo{
+             width: 50px;
+             height: 65px;
+           }
+           .info-card-name{
+             font-size: 14px;
+             font-weight: 100;
+           }
+           .info-card-services{
+             font-weight: 600;
+
+             .info-card-services_item{
+               font-weight: 400;
+               margin: 30px 0;
+
+             }
+           }
+         }
+       }
+      }
+      .product-info-descriptionBlock{
+
+
+        .descriptionBlock-about{
+          font-size: $base-fz;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
+
+        }
+        .descriptionBlock-title{
+          font-size: $title-fz;
+          line-height: calc(40 / 36 * 100%);
+          font-family: Georgia, sans-serif;
+          color: #01996D;
+          font-weight: 600;
+
+        }
+        .descriptionBlock-description{
+          font-size: $base-fz;
+          color: #292929;
+          letter-spacing: 0.5px;
+          line-height: calc(30 / 16 * 100%);
+
+        }
+
+        .descriptionBlock-button{
+          width: 130px;
+          height: 40px;
+          background-color: #01996D;
+          padding: 10px;
+
+          .descriptionBlock-button-link{
+            font-size: 14;
+            color: white;
+          }
+        }
+      }
+      .product-info-descriptionBlock *:not(:last-child){
+        padding: 20px 0;
+      }
+    }
+  }
 }
-//сделать бургер меню

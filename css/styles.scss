@@ -72,6 +72,20 @@ body{
     padding: 0 15px 0 0;
   }
 }
+@media (max-width: 1116px){
+  .introduction-block-video{
+    padding: 0 0 15px 0;
+  }
+  .introduction-block-info{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    .introduction-info_button{
+      margin: 0 auto;
+    }
+  }
+}
 .article-first-number{
   position: absolute;
 }
@@ -79,6 +93,16 @@ body{
   .article-block-three {
     margin: 0 auto;
     padding: 50px 0 0 0;
+  }
+  .introduction-block-video img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 988px) {
+  .logForm-btn{
+    margin: 0 0 0 5px;
   }
 }
 
@@ -100,28 +124,11 @@ body{
   }
 }
 
-@media (max-width: 476px) {
-  .logForm-btn{
-    width: 80px;
-    height: 25px;
-    background-color: #01996D;
-
-    .logForm-btn-link{
-      color: white;
-      font-size: 16px;
-
+@media (max-width: 440px) {
+    .header-logForm{
+      width: 100px;
+      height: 30px;
+      margin: -50px 0 0 0;
     }
-  }
-  .regForm-btn{
-    width: 80px;
-    height: 25px;
-    background-color: inherit;
-    border: 1px solid black;
-
-    .regForm-btn-link{
-      color: #292929;
-      font-size: 16px;
-    }
-  }
 }
 
