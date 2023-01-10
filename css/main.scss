@@ -253,7 +253,7 @@ $title-fz: 36px;
          position: relative;
          min-width: 500px;
          height: 500px;
-
+         border-radius: 10px;
          .girl{
            position: absolute;
            bottom: 0px;
@@ -261,6 +261,7 @@ $title-fz: 36px;
          }
 
          .product-info-card{
+           border-radius: 10px;
            box-shadow: 1px 1px 50px 5px;
            padding: 20px;
            top: 320px;
@@ -334,13 +335,10 @@ $title-fz: 36px;
           padding: 10px;
 
           .descriptionBlock-button-link{
-            font-size: 14;
+            font-size: 14px;
             color: white;
           }
         }
-      }
-      .product-info-descriptionBlock *:not(:last-child){
-        padding: 20px 0;
       }
     }
   }
